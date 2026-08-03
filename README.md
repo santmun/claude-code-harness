@@ -24,9 +24,17 @@ El loop se repite hasta 3 pasadas o hasta que no quede nada crítico abierto.
 
 ## Instalación
 
+Párate en la carpeta de tu proyecto y corre:
+
 ```bash
-bash instalar.sh                 # instala en la carpeta actual
-bash instalar.sh ~/mi-proyecto   # instala en otra carpeta
+curl -fsSL https://raw.githubusercontent.com/santmun/claude-code-harness/main/instalar.sh | bash
+```
+
+O si prefieres revisarlo antes de correrlo (recomendado):
+
+```bash
+git clone https://github.com/santmun/claude-code-harness
+bash claude-code-harness/instalar.sh ~/mi-proyecto
 ```
 
 Crea `.claude/skills/harness/` y `.claude/agents/` en tu proyecto, e inicializa git si falta.
